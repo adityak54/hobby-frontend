@@ -1,0 +1,25 @@
+.bannerTitle {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.bannerText {
+  font-stretch: expanded;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+@media (max-width: 475px) {
+  .bannerTitle {
+    font-style: italic;
+    font-weight: 700;
+    font-size: larger;
+  }
+
+  .bannerText {
+    font-stretch: expanded;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: smaller;
+  }
+}

@@ -1,4 +1,5 @@
 "use client";
+
 import Navigation from "@/components/Header/Header";
 import LandingBanner from "@/components/LandingBanner/Banner";
 import Decoration from "@/ui/DecorationCards/Card";
@@ -23,7 +24,6 @@ export default function Page() {
   useEffect(() => {
     const checkScrollTop = () => {
       if (!showScroll && window.pageYOffset > 400) {
-        // Adjust the number based on when you want the button to appear
         setShowScroll(true);
       } else if (showScroll && window.pageYOffset <= 400) {
         setShowScroll(false);
@@ -31,8 +31,6 @@ export default function Page() {
     };
 
     window.addEventListener("scroll", checkScrollTop);
-
-    // Clean up the listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", checkScrollTop);
     };
